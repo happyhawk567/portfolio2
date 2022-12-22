@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Redesign (BRYTE) </title>
+<link rel="stylesheet" href="project-page.css">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8"/>
+</head>
+<body>
+
+<div className="App">
+  <div class="topnav">
+   
+    <a href="https://happyhawk567.github.io/cs1300-portfolio/"> <- Back to Portfolio</a>
+
+ 
+  </div>
+          <h1> Re-designing BRTYE's "Join Us" Page:</h1> <h2> responsive redesign</h2>
+          <div class="summary"> <h3 class="summary"><b> Summary:</b> Analayzed and re-designed a web-page to improve its usability, learnability, and memorability </b>  <br><br> <b> Process: </b> Created a list of the page's areas of improvement & accessibility issues, then created screen-responsive Balsamiq wireframes & Figma designs to address each of the outlined issues. I then used HTML & CSS to create the re-designed page. </b> <br><br><b> Reflection: </b> I was surprised by the number of the page's issues that were not immediately apparent until I tried to use it on my phone. It's especially important when thinking about how these issues impact accessibility, such as color contrast. </div>
+          <h3> Introduction </h3>
+          <p> For this project, I chose to re-design one of the pages (“Join Us”)  for Brown University’s BRYTE (Brown Refugee Youth Tutoring and Enrichment). I chose to focus on this website because I really admire the organization and I noticed there were a few areas of improvement in regards to the site's overall cohesiveness and responsiveness. Since the "Join Us" page is often the first stop for prospective members, I thought it would be especially important to improve this page so that it could leave a better first impression. You can access the current page <a href="https://brownrefugeetutoring.org/JoinUs.html">here </a> or view it below. <br> <br>
+        
+            <h1><iframe  width="50%" height="350" src="https://brownrefugeetutoring.org/JoinUs.html" allowfullscreen></iframe></p> </h1>
+
+            <h3>  Issues </h3>
+          <p> After spending some time interacting with the page, I have compiled a list of areas for improvement based on the standards of usability, learnability, and memorability. I also ran the page through WebAIM WAVE to detect potential accessibility issues.   </p>
+  
+          <h4>  Usability </h4>
+          <ul><li> Text gets cluttered and hard to read when screen width is small. </li>
+            <li> When opening the page on a phone, the navigation bar is very cluttered and hard to use. For general decreased screen width, the "donate" portion of the navigation bar overlaps with other navigation bar links.</li>
+            <li> There could be more contrast between text and background colors for some elements, such as the donate link on the yellow background, and the translucent white hamburger menu. </li>
+            </ul>
+          <h4>  Learnability </h4>
+          <ul><li> The navigation bar has no visual distinguisher for the current page, and the title of the page is not written on the page. </li>
+            <li> There is no clear element to click in order to apply for one of the listed positions. Users have to have read through the text, where the link to the application document is found as a link within the body of text. </li></ul>
+
+         
+            <h4>  Memorability </h4>
+          <ul><li> There are a lot of different colors, which is not good for memorability and creating a cohesive page. </li>
+            <li> For most screen sizes, the majority of the images are obscured with text on top. </li>
+              <li> Logos can be important parts of a site's theme, but some parts of the BRYTE's logo on the navigation bar are hidden when screen height is decreased.  </li>
+              <li> Longer chunks of text which could be broken up with the use of icons. </li></ul>
+ 
+         
+              <h4>  WAVE Results </h4>
+          <p>
+          WAVE results included several empty links, corresponding social media icons on the bottom of the page. This could easily be fixed by replacing the empty link text with the proper links to the organization's social media accounts. Another highlighted issue is an image's alt text, which can be added as an image property in the HTML file.  
+ Another issue presented was a low-contrast error for the white "Donate" text on top of a yellow background, which I have already listed above as a usabillity issue.
+
+</p>
+            <h3> Lo-Fi Design</h3>
+            <p> Using Balsamiq, I created lo-fi designs for a re-designed web-page that addresses the issues listed above. There are seperate lo-fi designs for phone, tablet, and desktop screen sizes in order to see how the page layout adapts to different screen sizes. Each of the diagrams is labeled with the corresponding number to the issue that it addresses, as detailed in the table below.  </p>
+            <div class="img-row">
+
+              <div class="diagram">
+                <h4> Mobile View </h4>
+                <img src="images/phone-lofi.png" alt="phone view"> </img> 
+              </div>
+      <div class="diagram">
+          <h4> Tablet View </h4>
+          <img src="images/tablet-lofi.png" alt="tablet view"> </img>
+      </div>
+      <div class="diagram">
+        <h4> Desktop View </h4>
+        <img src="images/desktop-lofi.png" alt="desktop view"> </img>
+    </div>
+   
+
+      </div>
+
+      <table>
+        <tr>
+          <th>Label</th>
+          <th>Description of change</th>
+          <th>Which of the above issues does this address?</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Responsive 'hamburger' menu -- once screen width is too small to display all the menu options in one line, this menu will appear, which can be pressed to reveal the menu options vertically. This will most be used within the phone view. </td>
+          <td>Usability -- this addresses the issue of the cluttered, overlapping navigation bar within the phone view, making it much easier to use. </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Instead of writing headings on top of photos, have them in seperate sections where they do not overlap. </td>
+          <td>Memorability -- the text will no longer obscure the images, which will help create a more memorable page. </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Add buttons that allow user to apply to specific positions</td>
+          <td>Learnability -- instead of having to read through a lot of text in order to find the link to apply, the button is a clear element that simplifies the process.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Logo height spans the length of the navigation bar</td>
+          <td>Memorability -- the logo will no longer be cut off. </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Add email icon that links to the organization's email</td>
+          <td>Memorability -- breaks off chunk of text by using icon instead. </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>The current page is highlighted in the navigation bar & its title is written on top of the page.</td>
+          <td>Learnability -- this makes it much easier for user to know which page they are currently on. </td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Link to 'Donate' page does not overlap with rest of navigation bar, and will use the same color scheme as rest of page, which has better color contrast</td>
+          <td>Usability -- donate link is easier to read and click </td>
+        </tr>
+      </table>
+            <h3> Hi-Fi Design</h3>
+
+
+           <p> Using Figma, I created a style guide and hi-fi designs for desktop, tablet, and phone screen sizes. The color palette is based off of different opacities of the red in BRYTE's current logo. You can access the Figma file below with <b> detailed annotations on the page's hiearchy and specific layout elements. </b> The majority of the annotations on the phone screen are consistent across the devices, with the exception of the expanded navigation bar for the desktop. These differences are highlighted through the annotations on the desktop view.</p>
+             <h1><iframe  width="50%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQ1rbMC2mfABEnV2D1jaoFB%2FBRYTE%3Fnode-id%3D0%253A1%26t%3DabjGs1K4JSuvlWK2-1" allowfullscreen></iframe> </h1> 
+            <p> You can also view the style guide and un-annotated versions of each design as images below. Hover on each image to inscrease its size. </p>
+            <div class="style-guide">
+            <h4> Style Guide </h4>
+            
+            <img src="images/style-guide.png" alt="style guide"> </img>
+          </div>
+          <div class="img-row">
+            <div class="diagram">
+            <h4> Mobile View </h4>
+            <img src="images/phone-hifi.png" alt="phone view"> </img>
+        </div>
+
+        <div class="diagram">
+          <h4> Tablet View </h4>
+          <img src="images/tablet-hifi.png" alt="tablet view"> </img>
+      </div>
+
+
+        <div class="diagram">
+    <h4> Desktop View </h4>
+    <img src="images/desktop-hifi.png" alt="desktop view"> </img>
+  </div>
+</div>
+
+    </div>
+            <h3> Deployed Page</h3>
+            <p> Access the re-designed page <a href="https://happyhawk567.github.io/Responsive/">here </a> or view it below.
+            <br></p>
+              <h1>  <iframe width="50%" height="500px" src="https://happyhawk567.github.io/Responsive/" title="" frameborder="0"allowfullscreen></iframe> </h1> 
+
+
+
+</div>
+    
+</body>
+</html>

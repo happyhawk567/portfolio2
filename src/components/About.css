@@ -1,0 +1,113 @@
+/* Add a black background color to the top navigation */
+
+
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(243, 242, 177);
+  color: black;
+  font-weight:600;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(243, 242, 177);
+  color: black;
+}
+
+
+.column-left{
+    float: left;
+    width: 65%;
+
+}
+
+.column-right{
+    float: left;
+    width: 35%;
+
+}
+
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+
+      .highlight{
+        background-color: rgb(243, 242, 177);
+        display: inline-block;
+        padding: .5rem;
+        font-weight: 700;
+        animation: 3s linear 0s infinite alternate move;
+      }
+.about {
+width: 100%; 
+display: flex; 
+padding-left: 2.5rem;
+padding-right: 2.5rem; 
+flex-direction: row; 
+align-items: left; 
+
+} 
+
+
+ .about-intro{
+
+text-align: left; 
+flex-direction: column; 
+align-items: left;  
+ }
+
+
+h1.about-intro{
+  padding-top:1rem;
+padding-right:3rem;
+  font-size: 4rem;
+  font-weight: 500; 
+}
+
+h2.about-intro{
+  font-size: 2rem;
+  font-weight: 200; 
+  padding-right:3rem;
+
+}
+ 
+
+ p{
+line-height: 1.625;
+font-size:1.25rem ;
+ } 
+
+  .photo{
+    padding: 2rem;
+    display: all; 
+  }
+
+img.photo-img{
+    width: 100%;
+    object-fit: cover; 
+object-position: left; 
+border-radius: 0.25rem; 
+filter:saturate(90%);
+}
+
+
+ 
